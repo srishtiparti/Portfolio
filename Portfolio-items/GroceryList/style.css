@@ -55,7 +55,7 @@ body {
 
 .main {
     max-width: 25rem;
-    min-height: 15rem;
+    min-height: 10rem;
     padding: 1rem 5rem;
     margin: 7rem auto;
     background-color: #fff;
@@ -94,6 +94,7 @@ body {
 
 .item {
     display: inline;
+    text-transform: capitalize;
 }
 
 .itemButton {
