@@ -17,7 +17,7 @@ Variables
     --clr-primary-7: hsl(205, 90%, 76%);
     --clr-primary-8: hsl(205, 86%, 81%);
     --clr-primary-9: hsl(205, 90%, 88%);
-    --clr-primary-10: hsl(205, 100%, 96%);
+    --clr-primary-10: hsl(180, 9%, 98%);
     /* darkest grey - used for headings */
     --clr-grey-1: hsl(209, 61%, 16%);
     --clr-grey-2: hsl(211, 39%, 23%);
@@ -29,7 +29,7 @@ Variables
     --clr-grey-7: hsl(211, 27%, 70%);
     --clr-grey-8: hsl(210, 31%, 80%);
     --clr-grey-9: hsl(212, 33%, 89%);
-    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-grey-10: hsl(180, 9%, 98%);
     --clr-white: #fff;
     --clr-red-dark: hsl(360, 67%, 44%);
     --clr-red-light: hsl(360, 71%, 66%);
@@ -40,7 +40,7 @@ Variables
     --ff-secondary: "Open Sans", sans-serif;
     --transition: all 0.3s linear;
     --spacing: 0.1rem;
-    --radius: 0.25rem;
+    --radius: 20px;
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     --max-width: 1170px;
@@ -100,27 +100,27 @@ main {
 }
 
 .img-container {
-    border-radius: 0.5rem 0.5rem 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 .source-code-text {
     padding: 1rem 0;
-    background-color: var(--clr-grey-7);
+    background-color: var(--clr-grey-1);
     margin-bottom: 0;
-    border-radius: 0 0 0.5rem 0.5rem;
+    border-radius: 0 0 20px 20px;
 }
 
 .source-code,
 .source-code:visited,
 .source-code:hover {
     text-decoration: none;
-    color: var(--clr-grey-3);
+    color: var(--clr-grey-9);
 }
 
 .cover-image {
     height: 15rem;
     width: 22.5rem;
-    border-radius: 0.5rem 0.5rem 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 .filter-text {
