@@ -42,6 +42,9 @@
 }
 
 body {
+    background: url("./images/bouncing-ball.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
     max-width: 70rem;
     margin: 10rem auto;
     align-items: center;

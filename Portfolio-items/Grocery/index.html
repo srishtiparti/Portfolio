@@ -1,0 +1,122 @@
+<!-- Assignment 1 : To create a website where user can add groceries in the cart and see the total -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree's Store</title>
+    <style>
+        /* styling the body to be in middle of the screen */
+        body {
+            background-image: url('imageBackground.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            width: 400px;
+            margin: 0% 10%;
+        }
+
+        /* styling the Outer Table to have width of 750 pixel */
+        #outerTable {
+            width: 750px;
+        }
+
+        /* styling the inner Table to have width of 400 pixel and black border with margin to place it in the center of screen while there is a button at bottom */
+        #innerTable1 {
+            border: black;
+            width: 400px;
+            padding: auto;
+            margin: 10% 10% 2% 10%;
+        }
+
+        /* styling each data block to have padding*/
+        td {
+            padding: 0 10px;
+        }
+
+        /* setting the image treeIcon before the class header text*/
+        .header img {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: #555;
+        }
+
+        /* setting the header to have top margin and left margin */
+        .header h1 {
+            top: 18px;
+            position: relative;
+            left: 10px;
+        }
+
+        /* aligning the button to be in center*/
+        #totalAmountBtn {
+            align-items: center;
+            margin: 0 35% 2% 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- setting the icon to be on left side of the heading -->
+    <div class="header">
+        <img src="treeIcon.jpg" />
+        <h1>Welcome to Tree's Store</h1>
+    </div>
+    <!-- creating a table with two columns and one row-->
+    <table align="center" id="outerTable">
+        <tr>
+            <td>
+                <!-- creating a nested table to show item, price and add quantities -->
+                <table border="4" align="center" id="innerTable1">
+                    <tr>
+                        <td>Items</td>
+                        <td id="displayQuantity">Quantity</td>
+                        <td> Price</td>
+                    </tr>
+                    <tr>
+                        <td>Apple</td>
+                        <td id="appleQuantity">0</td>
+                        <td>$3 per lb</td>
+                        <td><button onclick="printAppleQuantity()">Quantity</button></td>
+                    </tr>
+                    <tr>
+                        <td>Egg</td>
+                        <td id="eggQuantity">0</td>
+                        <td>$4 per dozen</td>
+                        <td><button onclick="printEggQuantity()">Quantity</button></td>
+                    </tr>
+                    <tr>
+                        <td>Spinach</td>
+                        <td id="spinachQuantity">0</td>
+                        <td>$6 per lb</td>
+                        <td><button onclick="printSpinachQuantity()">Quantity</button></td>
+                    </tr>
+                    <tr>
+                        <td>Broccoli</td>
+                        <td id="broccoliQuantity">0</td>
+                        <td>$3 per lb</td>
+                        <td><button onclick="printBroccoliQuantity()">Quantity</button></td>
+                    </tr>
+                    <tr>
+                        <td>Milk</td>
+                        <td id="milkQuantity">0</td>
+                        <td>$2 per liter</td>
+                        <td><button onclick="printMilkQuantity()">Quantity</button></td>
+                    </tr>
+                </table>
+                <!-- when the Calculate Total amount button is clicked, the receipt is generated using javascript code -->
+                <button id="totalAmountBtn" onclick="printReceipt();"> Calculate Total Amount</button>
+            </td>
+            <!-- the total amount receipt is printed in this block -->
+            <td id="receipt"></td>
+        </tr>
+    </table>
+</body>
+<!-- connecting to javascript file -->
+<script src="GroceryListJS.js">
+</script>
+
+</html>

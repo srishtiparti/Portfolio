@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Casper Book Fair</title>
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=l">
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<!-- logo image retrived from: https://icons8.com/icons/set/book -->
+		<img src="images/BookLogo.png" alt="Book fair Logo" height="90" />
+		<h2>Casper Book Fair</h2>
+		<h3><span class="shadow">150<sup>th</sup></span> Camp, to Read A Lot</h3>
+	</header>
+	<!-- creating 3 tier nav bar -->
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="pages/products.html">Products</a></li>
+			<li><a href="pages/subscribe.html">Subscribe</a></li>
+			<li><a href="#">Future Events</a></li>
+			<li><a href="#" class="lastitem">About Us</a>
+				<ul>
+					<li><a>Book Fair</a></li>
+					<li><a>Sponsors</a></li>
+					<li><a>Events</a></li>
+					<li><a>Contributors</a></li>
+					<li><a>Contact us</a>
+						<ul>
+							<li><a>Email</a></li>
+							<li><a>Location</a></li>
+							<li><a>Phone Number</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<!-- enclose till h1 elements in section -->
+		<section>
+			<h2>About Book Fair</h2>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam molestiae similique pariatur,
+				repellendus asperiores voluptates, accusantium tempora ratione eius provident impedit saepe et
+				necessitatibus sapiente explicabo unde placeat laudantium maxime.:</p>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui id cupiditate enim at vel quibusdam, quidem
+				quam iusto tenetur temporibus rerum in ipsam error dicta totam beatae maiores, officia cum.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At minima cum a, earum incidunt recusandae
+				temporibus saepe vitae dicta eaque quas, neque, fugit nesciunt labore voluptates ut explicabo sed
+				dolores.</p>
+
+			<blockquote> &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ex laboriosam omnis
+				expedita maxime saepe unde autem beatae iste sunt rem pariatur sint, a temporibus ipsa, id officia sit
+				velit!&rdquo; </blockquote>
+
+			<!-- added content for speaker of the month from content_6. Added everything in article with image. 
+				Added hyperlink for "Read more." -->
+			<h1>Main Highlights</h1>
+			<article>
+				<h2>Casper Book Fair in Toronto </h2>
+				<figure>
+					<picture>
+						<img src="images/BookFair.jfif" alt="Toronto Book Fair" />
+					</picture>
+					<figcaption>Casper Book Fair at Toronto</figcaption>
+				</figure>
+				<h3>May 19, 2021<br>
+					Location - King Street, Toronto</h3> <br>
+
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nulla consequuntur numquam hic!
+					Impedit unde velit consequatur at modi odit quis sit corporis totam, dolorem eum blanditiis corrupti
+					provident ex! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus dicta blanditiis
+					est cupiditate sequi asperiores praesentium, architecto vero, quaerat optio ab qui. Quis quidem
+					ipsum atque nesciunt repudiandae modi asperiores. Lorem ipsum dolor sit amet consectetur adipisicing
+					elit. Eos tempore et nobis at laboriosam. Optio aliquid ex inventore laudantium quia debitis facere
+					beatae ratione repudiandae, dignissimos veritatis possimus cumque! Fuga. <br><br>
+				</p>
+			</article>
+			<h2>Ticket Prices</h2>
+			<ul id="circle">
+				<li>Single Adult: $20</li>
+				<li>Single Kid: $10</li>
+				<li>Family Pack for 4: $40</li>
+				<li>Date Pack for 2: $30</li>
+			</ul>
+		</section>
+		<!-- creating aside bar -->
+		<aside>
+			<h2>Book Fair</h2>
+			<div><br>
+				<a href="index.html"><img src="images/BookLogo.png" alt="BookFair logo Image" height="100" /></a>
+				<a href="index.html"><h3>Home page</a></h3>
+
+				<a href="pages/products.html"><img src="images/products.jfif" alt="Products Logo Image" height="100" /></a>
+				<a href="pages/products.html"><h3>Products</a></h3>
+
+				<a href="pages/subscribe.html"><img src="images/subscribe.png" alt="Subscribe Image" height="100" /></a>
+				<a href="pages/subscribe.html"><h3>Subscribe</a></h3>
+			</div>
+		</aside>
+	</main>
+	<footer>
+		<p>&copy; Srishti Parti 8693901</p>
+	</footer>
+</body>
+
+</html>

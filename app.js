@@ -112,6 +112,34 @@ const data = [{
         language: ["Html", "CSS", "JS"],
         github: "https://github.com/srishtiparti/VanillaJS"
     },
+    {
+        name: "Grocery",
+        img: "./images/grocery.jpg",
+        path: "./Portfolio-items/Grocery/index.html",
+        language: ["Html", "JS"],
+        github: "https://github.com/srishtiparti/VanillaJS"
+    },
+    {
+        name: "Event Page",
+        img: "./images/event.jpg",
+        path: "./Portfolio-items/EventPage/index.html",
+        language: ["Html", "JS"],
+        github: "https://github.com/srishtiparti/VanillaJS"
+    },
+    {
+        name: "Adoption Center",
+        img: "./images/adoption.jpg",
+        path: "./Portfolio-items/Adoption-center/index.html",
+        language: ["Html", "JS"],
+        github: "https://github.com/srishtiparti/VanillaJS"
+    },
+    {
+        name: "Bookfair",
+        img: "./images/bookfair.jpg",
+        path: "./Portfolio-items/Bookfair/index.html",
+        language: ["Html", "JS"],
+        github: "https://github.com/srishtiparti/VanillaJS"
+    },
 ]
 
 var filter = document.getElementById("filterButton");

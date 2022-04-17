@@ -1,0 +1,121 @@
+/* reset selector */
+*{margin:0;
+padding:0;}
+
+/* setting the html page background */
+html{
+	background-color: #ffe6ff;
+}
+
+/* setting the width, background (linear gradient) and border properties for body */
+body {
+    font-size: 100%;
+	width: 55%;
+	margin: 0 auto;
+	border: 5px solid #b300b3;
+	border-radius: 10px;
+	margin-top: 30px;
+	background-image: -webkit-linear-gradient(30deg, #e699ff 0%, #e699ff 30%, white 0%, #e699ff 80%, #e699ff 100%);
+	background-image: -moz-linear-gradient(30deg, #e699ff 0%, #e699ff 30%, white 0%, #e699ff 80%, #e699ff 100%);
+	background-image: -o-linear-gradient(30deg, #e699ff 0%, #e699ff 30%, white 0%, #e699ff 80%, #e699ff 100%);
+	background-image: linear-gradient(30deg, #e699ff 0%, #e699ff 30%, white 0%, #e699ff 80%, #e699ff 100%);
+}
+
+/* moving the image to the left side of the header with padding in left and right sides */
+header img{
+    float: left;
+    padding: 0 30px;
+}
+
+/* setting header properties such as font family, background, padding and background color */
+header{
+    font-family:cursive;
+    padding: 20px;
+	background-color: #b300b3
+}
+
+/* setting shadow to the title in the header */
+header h1 {
+    text-shadow: 2px 2px 4px #ffccff;
+}
+
+/* setting properties for section to have width of 80%, floating to right */
+main section{
+	width: 80%;
+	float: right;
+	padding: 0 20px 20px 20px;
+}
+
+/* setting blockquote properties */
+section blockquote{
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-style: italic;
+	font-weight: 300;
+}
+
+/* setting padding for p in section */
+section p{
+	padding: 5px;
+}
+
+/* setting padding for h2 in section */
+section h2{
+	padding: 20px 0;
+}
+
+/* setting padding for list in section */
+section ul{
+	padding-left: 40px;
+	padding-bottom: 20px;
+}
+
+/* setting font properties for id adoptionFee */
+#adoptionFee, #moreOptions{
+	font-size: 110%;
+	font-weight: 500;
+	font-style: italic;
+}
+
+/* changing the color of the link when mouse hovers */
+a:focus , a:hover{
+	font-style: italic;
+	color:darkgreen;
+}
+
+/* setting font style to cursive for class dogName */
+.dogName{
+	font-family: cursive;
+}
+
+/* setting the color of the anchor link */
+a{
+	color: #660066;
+}
+
+/* setting padding for aside */
+aside{
+	padding: 1em;
+}
+
+/* setting the bottom padding for h2 */
+aside h2{
+	padding-bottom: 10px;
+}
+
+/* setting the bottom padding for h3 */
+aside h3{
+	padding-bottom: 1em; ;
+}
+
+/* setting the footer background making sure it is clear on both sides*/
+footer{
+	background-color: #b300b3;
+	clear: both;
+}
+
+/* setting properties for p in the footer */
+footer p{
+	padding: 1em 0;
+	text-align: center;
+	color: white;
+}

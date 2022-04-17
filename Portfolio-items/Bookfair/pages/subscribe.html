@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Casper Book Fair</title>
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/subscribe.css">
+	<meta name="viewport" content="width=device-width, initial-scale=l">
+	<link rel="stylesheet" href="../styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<!-- logo image retrived from: https://icons8.com/icons/set/book -->
+		<img src="../images/BookLogo.png" alt="Book fair Logo" height="90" />
+		<h2>Casper Book Fair</h2>
+		<h3><span class="shadow">150<sup>th</sup></span> Camp, to Read A Lot</h3>
+	</header>
+	<!-- creating 3 tier nav bar -->
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../pages/products.html">Products</a></li>
+			<li><a href="subscribe.html">Subscribe</a></li>
+			<li><a href="#">Future Events</a></li>
+			<li><a href="#" class="lastitem">About Us</a>
+				<ul>
+					<li><a>Book Fair</a></li>
+					<li><a>Sponsors</a></li>
+					<li><a>Events</a></li>
+					<li><a>Contributors</a></li>
+					<li><a>Contact us</a>
+						<ul>
+							<li><a>Email</a></li>
+							<li><a>Location</a></li>
+							<li><a>Phone Number</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<h1>Order Form</h1>
+    		<form action="" method="post"
+        		name="registration_form" id="registration_form"  onsubmit="return formSubmit();">
+    			<fieldset>
+	        		<legend>User Information</legend>
+	        		
+        			<label for="first_name">First Name:</label>
+					<input type="text" name="first_name" id="first_name" required tabindex="1"><br>
+					<label for="last_name">Last Name:</label>
+					<input type="text" name="last_name" id="last_name" required tabindex="2"><br>
+					<label for="email">E-Mail:</label>
+	        		<input type="email" tabindex="3" name="email" id="email" autofocus required><br>
+					<label for="postalcode">Postal Code:</label>
+					<input type="text" tabindex="4" name="postalcode" pattern="^\d{5}(-\d{4})?$" id="postalcode"><br>
+					<legend>Subscribe</legend>
+					<label>&nbsp;</label>
+					<input type="submit" id="subscribe" value="Subscribe" onclick="myfunction()">
+					<p id="message"></p>
+				</fieldset>
+			</form>
+		</section>
+		<aside>
+			<h2>Book Fair</h2>
+			<div><br>
+				<a href="../index.html"><img src="../images/BookLogo.png" alt="BookFair logo Image" height="100" /></a>
+				<a href="../index.html">
+					<h3>Home page
+				</a></h3>
+
+				<a href="products.html"><img src="../images/products.jfif" alt="Products Logo Image"
+						height="100" /></a>
+				<a href="products.html">
+					<h3>Products
+				</a></h3>
+
+				<a href="../pages/subscribe.html"><img src="../images/subscribe.png" alt="Subscribe Image"
+						height="100" /></a>
+				<a href="../pages/subscribe.html">
+					<h3>Subscribe
+				</a></h3>
+			</div>
+		</aside>
+	</main>
+	<footer>
+		<p>&copy; 2018, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+	</footer>
+</body>
+<script>
+	function myfunction() {
+		document.getElementById("message").innerHTML = "form submitted";
+	}
+	function formSubmit(){
+		return false;
+	}
+	</script>
+</html>

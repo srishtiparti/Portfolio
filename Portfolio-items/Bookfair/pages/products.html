@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Casper Book Fair</title>
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/products.css">
+	<meta name="viewport" content="width=device-width, initial-scale=l">
+	<link rel="stylesheet" href="../styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<!-- logo image retrived from: https://icons8.com/icons/set/book -->
+		<img src="../images/BookLogo.png" alt="Book fair Logo" height="90" />
+		<h2>Casper Book Fair</h2>
+		<h3><span class="shadow">150<sup>th</sup></span> Camp, to Read A Lot</h3>
+	</header>
+	<!-- creating 3 tier nav bar -->
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="../index.html" class="current">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="../pages/subscribe.html">Subscribe</a></li>
+			<li><a href="#">Future Events</a></li>
+			<li><a href="#" class="lastitem">About Us</a>
+				<ul>
+					<li><a>Book Fair</a></li>
+					<li><a>Sponsors</a></li>
+					<li><a>Events</a></li>
+					<li><a>Contributors</a></li>
+					<li><a>Contact us</a>
+						<ul>
+							<li><a>Email</a></li>
+							<li><a>Location</a></li>
+							<li><a>Phone Number</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<figure>
+				<figcaption id="table">
+					<h2>Casper's Most Popular Books</h2>
+				</figcaption>
+			<table>
+				<thead>
+					<th id="item" scope="col">Item</th>
+					<th id="image" scope="col">Book</th>
+					<th id="description" scope="col">Description</th>
+					<th id="price" scope="col">Cost</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td headers="book_title"> Harry Potter And The Philosopher's Stone </td>
+						<td headers="book_image"> 
+							<figure>
+								<picture>
+									<img src="../images/HarryPotter1.jpg"
+										alt="Harry Potter And The Philosopher's Stone" />
+								</picture>
+								<figcaption>Harry Potter And The Philosopher's Stone</figcaption>
+							</figure>
+						</td header = "book_description">
+						<td> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores odit explicabo
+							dignissimos nisi reprehenderit? Doloremque provident, eligendi, repellat eveniet suscipit
+							voluptatem nemo enim fugit nesciunt a porro sed optio! Voluptatem?</td>
+						<td headers="book_cost">
+							$10
+						</td>
+					</tr>
+					<tr>
+						<td headers="book_title"> Harry Potter And The Chamber Of Secrets </td>
+						<td headers="book_image">
+							<figure>
+								<picture>
+									<img src="../images/HarryPotter2.jpg"
+										alt="Harry Potter And The Chamber Of Secrets " />
+								</picture>
+								<figcaption>Harry Potter And The Chamber Of Secrets </figcaption>
+							</figure>
+						</td>
+						<td header = "book_description"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores odit explicabo
+							dignissimos nisi reprehenderit? Doloremque provident, eligendi, repellat eveniet suscipit
+							voluptatem nemo enim fugit nesciunt a porro sed optio! Voluptatem?</td>
+						<td headers="book_cost">
+							$15
+						</td>
+					</tr>
+					<tr>
+						<td headers="book_title"> Harry Potter And The Prisoner of Azkaban</td>
+						<td headers="book_image">
+							<figure>
+								<picture>
+									<img src="../images/HarryPotter3.jpg"
+										alt="Harry Potter And The Prisoner of Azkaban" />
+								</picture>
+								<figcaption>Harry Potter And The Prisoner of Azkaban </figcaption>
+							</figure>
+						</td>
+						<td header = "book_description"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores odit explicabo
+							dignissimos nisi reprehenderit? Doloremque provident, eligendi, repellat eveniet suscipit
+							voluptatem nemo enim fugit nesciunt a porro sed optio! Voluptatem?</td>
+						<td headers="book_cost">
+							$20
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</figure>
+		</section>
+		<!-- creating aside bar -->
+		<aside>
+			<h2>Book Fair</h2>
+			<div><br>
+				<a href="../index.html"><img src="../images/BookLogo.png" alt="BookFair logo Image" height="100" /></a>
+				<a href="../index.html">
+					<h3>Home page
+				</a></h3>
+
+				<a href="products.html"><img src="../images/products.jfif" alt="Products Logo Image"
+						height="100" /></a>
+				<a href="products.html">
+					<h3>Products
+				</a></h3>
+
+				<a href="../pages/subscribe.html"><img src="../images/subscribe.png" alt="Subscribe Image"
+						height="100" /></a>
+				<a href="../pages/subscribe.html">
+					<h3>Subscribe
+				</a></h3>
+			</div>
+		</aside>
+	</main>
+	<footer>
+		<p>&copy;  Srishti Parti 8693901</p>
+	</footer>
+</body>
+
+</html>

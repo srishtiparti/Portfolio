@@ -1,0 +1,344 @@
+/* standard 960 and above*/
+
+/* the styles for the elements */
+/* setting background color of html element to white*/
+/*reset selector for margin and padding*/
+*
+{margin:0;
+padding:0;}
+html{
+	background-color: rgb(97, 114, 146);
+}
+
+
+/* setting width of the body 800px */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 98%;
+	max-width: 960px;
+	margin: 0 auto;
+	border: 3px solid #0e37bd;
+	background-image: rgb(0, 0, 0)-linear-gradient(30deg, #6c40d3 0%, #5b24db 30%, white 0%, #5b24db 80%, #5b24db 100%);
+	background-image: -moz-linear-gradient(30deg, #6c40d3 0%, #5b24db 30%, white 0%, #5b24db 80%, #5b24db 100%);
+	background-image: -o-linear-gradient(30deg, #6c40d3 0%, #5b24db 30%, white 0%, #5b24db 80%, #5b24db 100%);
+	background-image: linear-gradient(30deg, #6c40d3 0%, #5b24db 30%, white 0%, #5b24db 80%, #5b24db 100%);
+}
+
+
+/* nav bar style */
+#nav_menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	
+}
+
+#nav_menu ul li{
+	float: left;
+	width: 20%;
+}
+
+#nav_menu a{
+	display: block;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: #0e37bd;
+	color: white;
+	font-weight: bold;
+}
+
+
+/* submenu style */
+#nav_menu ul ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+}
+
+#nav_menu ul ul li {
+	float: none;
+	position: relative;
+}
+
+#nav_menu ul ul li ul{
+	position: absolute;
+	top: 0%;
+	left: 100%;
+	width: 350%;
+}
+
+#nav_menu ul li.lastitem ul li ul {
+	left:-100%
+}
+
+
+
+#nav_menu ul li:hover>ul{
+	display: block;
+}
+
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#circle{
+	list-style-type: circle;
+}
+
+/*setting border and padding for the header */
+header{
+	border-bottom: 3px solid #0e37bd ;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+}
+
+/* the styles for the header */
+header img {
+	float: left;
+	padding: 0 3.75%;
+}
+/*deleted indentation*/
+header h2{
+	font-size: 170%;
+	color: #0e37bd;
+}
+/*deleted indentation*/
+header h3{
+	font-size: 130%;
+	font-style: italic;
+}
+
+
+/* the styles for the section */
+
+/* setting width 525px and float it to right for section */
+main section{
+	width: 65.62%;
+	float: right;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	padding-bottom: 20px;
+}
+
+/* setting aside id speakers with to 215px and float it to right */
+main aside{
+	width: 26.87%;
+	float: right;
+	padding-left: 2.5%;
+	padding-bottom: 20px;
+}
+
+/* adding properties to h2 */
+section h2, aside h2{
+	font-size: 130%;
+	color: #0e37bd;
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+
+/* styling article elements */
+section article{
+	padding-top:  0.5em;
+	padding-bottom: .5em;
+	border-top: 2px solid #0e37bd;
+	border-bottom: 2px solid #0e37bd;
+
+}
+
+/* styling h1 element in section */
+section h1{
+	font-size: 150%;
+	padding-top: .5em;
+	padding-bottom: .25em;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin: 0;
+}
+
+/* styling image in the article */
+article img{
+	border: 1px solid black;
+}
+
+/* styling h2 element in the article */
+article h2{
+	padding-top: 0;
+}
+
+/* styling h3 element in the article */
+article h3{
+	font-size: 105%;
+	padding-bottom: .5em;
+}
+
+/* adding properties for aside h3 elements */
+aside h3{
+	font-size: 105%;
+	padding: .05em;
+	border: 2px solid #5b24db;
+	text-align: center;
+}
+
+aside img{
+	border: 2px solid #5b24db;
+	margin-top: 1em;
+	margin-bottom: .15em;
+}
+
+/*setting padding for p in main*/
+section p{
+	padding-bottom: .5em;
+}
+/*setting padding and font-style for blockquote*/
+section blockquote{
+	padding: 0 2em;
+	font-style: italic;
+}
+/*setting padding for ul and li in main*/
+section ul{
+	padding:0 0 .25em 1.25em
+}
+section li{
+	padding-bottom: .35em;
+}
+
+aside a{
+	color: cornflowerblue;
+
+}
+
+aside a:focus ,a:hover{
+	font-style: italic;
+}
+
+.shadow{
+	text-shadow: 2px 2px 4px #0e37bd;
+}
+
+
+/* the styles for the footer */
+/* clearing float */
+footer{
+	background-color: #0e37bd;
+	clear: both;
+}
+footer p{
+	padding: 1em 0;
+	text-align: center;
+	color: white;
+}
+/* hide the mobile menu*/
+#mobile_menu { display: none; }
+
+/* tablet portrait layout (768px to 959px) */
+@media only screen and (max-width: 959px) {
+	section h1{
+		font-size: 135%;
+	}
+	section h2, aside h2{
+		font-size: 120%;
+	}
+}
+
+/* mobile landscape layout (480px to 767px) */
+@media only screen and (max-width: 767px) {
+
+	/* display the mobile menu and hide nav_menu*/
+	#nav_menu{display: none;}
+	#mobile_menu { 
+		display: block;
+	 }
+	.slicknav_menu { background-color: #0e37bd !important; }
+
+	header img{
+		float: none;
+	}
+	header{
+		text-align: center;
+	}
+	main section{
+		float: none;
+		width: 95%;
+	}
+	aside{
+		float: none;
+		width: 95%;
+		padding-right: 2.5%;
+	}
+	aside img{
+		max-width: 30%;
+	}
+	aside h3{
+		font-size: 60%;
+	}
+	article img{
+		max-width: 50%;
+		max-height: 50%;
+	}
+	aside div{
+		column-count: 2;
+	}
+}
+
+/*mobile portrait layout (479px or less) */
+@media only screen and (max-width: 479px) {
+	body{
+		font-size: 90%;
+	}
+}
+
+figure{
+	float:right;
+	margin-right: 1.5em;
+}
+
+figcaption{
+	display: block;
+	font-weight : bold;
+	padding-top: .25em;
+	margin-bottom: 1 em;
+	border-bottom: 1px solid black;
+}
+.table{
+	float: none;
+	margin: 0;
+}
+.table figcaption{
+	border-bottom: none;
+}
+tfoot{
+	border-top: 2px solid #0e37bd;
+	border-bottom: 2px solid #0e37bd;
+}
+
+thead{
+	border-top: 2px solid #0e37bd;
+	border-bottom: 2px solid #0e37bd;
+}
+tbody th:nth-last-child(n){
+	text-align: right;
+}
+tfoot th{
+	text-align: right;
+}
+
+tfoot th:nth-child(2){
+	text-align: center;
+}
+.left{
+	border-bottom: 2px solid #0e37bd;
+}
+th, td {
+
+	padding: .2em .7em;
+	text-align: left;
+}
+th.left, td.left { 
+	text-align: left; 
+}

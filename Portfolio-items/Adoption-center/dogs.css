@@ -1,0 +1,70 @@
+/* reset selector */
+*{margin:0;
+    padding:0;}
+    
+    /* setting the html page background */
+    html{
+        background-color: #ffe6ff;
+    }
+    
+    /* setting the width, background and border properties for body */
+    body {
+        font-size: 100%;
+        width: 55%;
+        margin: 0 auto;
+        border: 5px solid #b300b3;
+        border-radius: 10px;
+        margin-top: 30px;
+        background-image: -webkit-linear-gradient(30deg, #e699ff 0%, #e699ff 30%, white 0%, #e699ff 80%, #e699ff 100%);
+        background-image: -moz-linear-gradient(30deg, #e699ff 0%, #e699ff 30%, white 0%, #e699ff 80%, #e699ff 100%);
+        background-image: -o-linear-gradient(30deg, #e699ff 0%, #e699ff 30%, white 0%, #e699ff 80%, #e699ff 100%);
+        background-image: linear-gradient(30deg, #e699ff 0%, #e699ff 30%, white 0%, #e699ff 80%, #e699ff 100%);
+    }
+    
+    /* moving the image to the left side of the header with padding */
+    header img{
+        float: left;
+        padding: 0 30px;
+    }
+    
+    /* setting header properties such as font family, background, padding and background color */
+    header{
+        font-family:cursive;
+        padding: 20px;
+        border-bottom:5px solid #b300b3 ;
+        background-color: #b300b3
+    }
+    
+    /* setting shadow to the title in the header */
+    header h1 {
+        text-shadow: 2px 2px 4px #ffccff;
+    }
+
+    /* setting properties for section */
+    section{
+        padding: 30px;
+        float:left;
+    }
+
+    /* setting properties for aside */
+    aside{
+        padding-top: 30px;
+    }
+
+    /* setting padding for h3 element in aside */
+    aside h3{
+        padding: 10px;
+    }
+    
+    /* setting the footer background making sure it is clear on both sides*/
+    footer{
+        background-color: #b300b3;
+        clear: both;
+    }
+    
+    /* setting properties for p in the footer */
+    footer p{
+        padding: 1em 0;
+        text-align: center;
+        color: white;
+    }

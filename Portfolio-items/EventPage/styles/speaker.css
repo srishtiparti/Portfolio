@@ -1,0 +1,199 @@
+/* the styles for the elements */
+/* setting background color of html element to white*/
+/*reset selector for margin and padding*/
+*
+{margin:0;
+padding:0;}
+html{
+	background-color: white;
+}
+/* setting width of the body 800px */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 800px;
+	margin: 0 auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
+}
+
+/* nav bar style */
+#nav_menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#nav_menu li{
+	float: left;
+}
+
+#nav_menu a{
+	display: block;
+	width: 160px;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+
+/* submenu style */
+#nav_menu ul ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+#nav_menu ul ul li {
+	float: none;
+}
+
+#nav_menu ul li:hover>ul{
+	display: block;
+}
+
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*setting border and padding for the header */
+header{
+	border-bottom: 3px solid #931420 ;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	background-image: -webkit-linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 0%, #f6bb73 80%, #f6bb73 100%);
+	background-image: -moz-linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 0%, #f6bb73 80%, #f6bb73 100%);
+	background-image: -o-linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 0%, #f6bb73 80%, #f6bb73 100%);
+	background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 0%, #f6bb73 80%, #f6bb73 100%);
+}
+
+/* the styles for the header */
+header img {
+	float: left;
+	padding: 0 30px;
+}
+/*deleted indentation*/
+header h2{
+	font-size: 170%;
+	color: #800000;
+}
+/*deleted indentation*/
+header h3{
+	font-size: 130%;
+	font-style: italic;
+}
+
+/* the styles for the section */
+
+/* setting width 525px and float it to right for section mainBody */
+main section{
+	width: 525px;
+	float: right;
+	padding: 0 20px 20px 20px;
+}
+
+/* setting aside id speakers with to 215px and float it to right */
+main aside{
+	width: 215;
+	float: right;
+	padding: 0 0 20px 20px;
+}
+
+/* adding properties to h2 */
+aside h2{
+	font-size: 130%;
+	color: #800000;
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+
+/* styling article elements */
+section article{
+	padding-top:  0.5em;
+	padding-bottom: .5em;
+
+}
+
+/* styling h1 element in section */
+section h1{
+	font-size: 150%;
+	padding-top: .5em;
+	padding-bottom: .25em;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin: 0;
+	color: #800000;
+}
+
+/* styling image in the article */
+article img{
+	float: right;
+	margin: 5px 0 5px 5px ;
+	border: 1px solid black;
+}
+
+/* styling h2 element in the article */
+article h2{
+	padding-top: 0;
+	font-size: 18px;
+	color: black;
+}
+
+/* styling h3 element in the article */
+article h3{
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+/* adding properties for aside h3 elements */
+aside h3{
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+/*setting padding for images in aside*/
+aside img{
+	padding-bottom: 1em;
+}
+
+/*setting padding for p in main*/
+section p{
+	padding-bottom: .5em;
+}
+/*setting padding and font-style for blockquote*/
+section blockquote{
+	padding: 0 2em;
+	font-style: italic;
+}
+/*setting padding for ul and li in main*/
+section ul{
+	padding:0 0 .25em 1.25em
+}
+section li{
+	padding-bottom: .35em;
+}
+aside a:focus ,a:hover{
+	font-style: italic;
+}
+
+.shadow{
+	text-shadow: 2px 2px 4px #800000;
+}
+
+/* the styles for the footer */
+/* clearing float */
+footer{
+	background-color: #931420;
+	clear: both;
+}
+footer p{
+	padding: 1em 0;
+	text-align: center;
+	color: white;
+}
