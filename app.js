@@ -64,7 +64,7 @@ const data = [{
         github: "https://github.com/srishtiparti/VanillaJS"
     },
     {
-        name: "Review-Project",
+        name: "Review Project",
         img: "./images/review-project.jpg",
         path: "./Portfolio-items/Review-Project/index.html",
         language: ["Html", "CSS", "JS"],
@@ -85,7 +85,7 @@ const data = [{
         github: "https://github.com/srishtiparti/VanillaJS"
     },
     {
-        name: "StorePage",
+        name: "Store Page",
         img: "./images/store-page.jpg",
         path: "./Portfolio-items/StorePage/HomePage.html",
         language: ["Html", "CSS", "JS"],
@@ -173,8 +173,6 @@ function displayData(data) {
         <h3 class="source-code-text"><a href=${item.github} class="source-code">Source Code</a></h3>
                 </article>`
     });
-
-
     // so map gives us an array.. we need to join all the elements without coma(",") thus giving no parameter("")
     displayData = displayData.join("");
     //displaying it in class - menu-item
