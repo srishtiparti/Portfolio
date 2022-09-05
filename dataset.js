@@ -111,3 +111,5 @@ const data = [{
         github: "https://github.com/srishtiparti/VanillaJS"
     },
 ]
+
+module.export = data
