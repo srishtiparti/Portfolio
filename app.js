@@ -1,5 +1,6 @@
 // Dataset 
 const data = require('dataset')
+console.log(data)
 
 var filter = document.getElementById("filterButton");
 const project = document.querySelector(".project-items")
