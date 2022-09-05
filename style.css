@@ -371,12 +371,6 @@ nav {
         background: transparent;
     }
     .social-icons {
-        display: flex;
-    }
-    .social-icons a {
-        margin: 0 0.5rem;
-    }
-    .social-icons a:hover {
-        color: var(--clr-primary-7);
+        display: none;
     }
 }
