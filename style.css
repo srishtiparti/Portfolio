@@ -206,7 +206,6 @@ nav {
 }
 
 .links {
-    display: inline-block;
     height: 0;
     overflow: hidden;
     transition: var(--transition);
