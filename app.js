@@ -123,23 +123,37 @@ const data = [{
         name: "Event Page",
         img: "./images/event.jpg",
         path: "./Portfolio-items/EventPage/index.html",
-        language: ["Html", "JS"],
+        language: ["Html", "CSS"],
         github: "https://github.com/srishtiparti/VanillaJS"
     },
     {
         name: "Adoption Center",
         img: "./images/adoption.jpg",
         path: "./Portfolio-items/Adoption-center/index.html",
-        language: ["Html", "JS"],
+        language: ["Html", "CSS"],
         github: "https://github.com/srishtiparti/VanillaJS"
     },
     {
         name: "Bookfair",
         img: "./images/bookfair.jpg",
         path: "./Portfolio-items/Bookfair/index.html",
-        language: ["Html", "JS"],
+        language: ["Html", "CSS"],
         github: "https://github.com/srishtiparti/VanillaJS"
     },
+    {
+        name: "Book Club",
+        img: "./images/book-club.jpg",
+        path: "https://nodejs-apps-sp.herokuapp.com/book-club/index.html",
+        language: ["Html", "CSS", "NodeJS"],
+        github: "https://github.com/srishtiparti/Task-Manager-Nodejs"
+    },
+    {
+        name: "Task Manager",
+        img: "images/tasks.jpg",
+        path: "https://nodejs-apps-sp.herokuapp.com/task-manager/index.html",
+        language: ["Html", "CSS", "NodeJS"],
+        github: "https://github.com/srishtiparti/Task-Manager-Nodejs"
+    }
 ]
 
 var filter = document.getElementById("filterButton");
