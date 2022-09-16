@@ -149,14 +149,14 @@ const data = [{
     },
     {
         name: "Task Manager",
-        img: "images/perfume.jpg",
+        img: "images/tasks.jpg",
         path: "https://nodejs-apps-sp.herokuapp.com/task-manager/index.html",
         language: ["Html & CSS", "NodeJS"],
         github: "https://github.com/srishtiparti/Task-Manager-Nodejs"
     },
     {
         name: "Perfume Store",
-        img: "images/tasks.jpg",
+        img: "images/perfume.jpg",
         path: "https://perfumeapp-node.herokuapp.com/",
         language: ["Html & CSS", "NodeJS"],
         github: "https://github.com/srishtiparti/ServerSideValidationProcessing"
