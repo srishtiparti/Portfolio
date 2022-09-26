@@ -155,7 +155,7 @@ const data = [{
         github: "https://github.com/srishtiparti/NodeJS-Baisc/tree/main/1-Project-Task-Manager"
     },
     {
-        name: "Server Side Validation - Perfume Store",
+        name: "Validation-Perfume Store",
         img: "images/perfume.jpg",
         path: "https://perfumeapp-node.herokuapp.com/",
         language: ["Html & CSS", "NodeJS"],
