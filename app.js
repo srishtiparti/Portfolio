@@ -145,22 +145,29 @@ const data = [{
         img: "./images/book-club.jpg",
         path: "https://nodejs-apps-sp.herokuapp.com/book-club/index.html",
         language: ["Html & CSS", "NodeJS"],
-        github: "https://github.com/srishtiparti/Task-Manager-Nodejs"
+        github: "https://github.com/srishtiparti/NodeJS-Baisc/tree/main/2-Project-Bookclub"
     },
     {
         name: "Task Manager",
         img: "images/tasks.jpg",
         path: "https://nodejs-apps-sp.herokuapp.com/task-manager/index.html",
         language: ["Html & CSS", "NodeJS"],
-        github: "https://github.com/srishtiparti/Task-Manager-Nodejs"
+        github: "https://github.com/srishtiparti/NodeJS-Baisc/tree/main/1-Project-Task-Manager"
     },
     {
-        name: "Perfume Store",
+        name: "Server Side Validation - Perfume Store",
         img: "images/perfume.jpg",
         path: "https://perfumeapp-node.herokuapp.com/",
         language: ["Html & CSS", "NodeJS"],
         github: "https://github.com/srishtiparti/ServerSideValidationProcessing"
-    }
+    },
+    {
+        name: "JWT Create User",
+        img: "images/login.jpg",
+        path: "https://nodejs-sp.herokuapp.com/JWT-login/index.html",
+        language: ["Html & CSS", "NodeJS"],
+        github: "https://github.com/srishtiparti/NodeJS-Baisc/tree/main/5-JWT"
+    },
 ]
 
 
